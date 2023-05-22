@@ -221,7 +221,7 @@ var waypoints = [
 ];
 var enemy = new Enemy('models/my_model.gltf', waypoints, 1);
 
-
+/*
 // Enemigo
 class Enemy {
     constructor(modelUrl, waypoints, speed) {
@@ -269,7 +269,7 @@ class Enemy {
         this.model.position.copy(this.position);
     }    }
 }
-
+*/
 
 // Renderizar la escena
 function animate() {
