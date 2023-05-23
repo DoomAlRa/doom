@@ -2,6 +2,17 @@ var loader = new THREE.TextureLoader();
 var muro = loader.load('media/viejo-muro-ladrillo.jpg');
 var suelo = loader.load('media/suelo doom 3.jpg');
 var cielo = loader.load('media/techo.jpg');
+let mira = document.getElementById('mira');
+let imgMira = mira.querySelector('img');
+
+// Ajustar la posición
+mira.style.top = '50%';
+mira.style.left = '50%';
+
+// Ajustar el tamaño
+imgMira.style.width = '85px';
+imgMira.style.height = '60px';
+
 var maze = [
   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
   [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
